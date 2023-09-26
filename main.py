@@ -40,4 +40,4 @@ if __name__ == '__main__':
     fetch_exchange_rates()
     t = Thread(target=run_schedule)
     t.start()
-    app.run(port=5000)
+    app.run(host="0.0.0.0", port=8000)
